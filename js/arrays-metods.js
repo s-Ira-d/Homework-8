@@ -23,13 +23,27 @@ if (removeIndex !== -1) {
   cards.splice(removeIndex, 1);
 }
 console.log(cards);
+const cards2 = [
+  "карточка-1",
+  "карточка-2",
+  "карточка-3",
+  "карточка-4",
+  "карточка-5",
+];
 const cardToInsert = "карточка-6";
 const insertIndex = 2;
-cards.splice(insertIndex, 0, cardToInsert);
-console.log(cards);
+cards2.splice(insertIndex, 0, cardToInsert);
+console.log(cards2);
+const cards3 = [
+  "карточка-1",
+  "карточка-2",
+  "карточка-3",
+  "карточка-4",
+  "карточка-5",
+];
 const cardToUpdate = "карточка-4";
-const updateIndex = cards.indexOf(cardToUpdate);
+const updateIndex = cards3.indexOf(cardToUpdate);
 if (updateIndex !== -1) {
-  cards.splice(updateIndex, 1, "оновлена карточка-4");
+  cards3.splice(updateIndex, 1, "оновлена карточка-4");
 }
-console.log(cards);
+console.log(cards3);
